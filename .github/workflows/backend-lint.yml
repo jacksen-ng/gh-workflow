@@ -30,17 +30,6 @@ jobs:
           curl -LsSf https://astral.sh/uv/install.sh | sh
           echo "$HOME/.local/bin" >> $GITHUB_PATH
       
-      # デバッグ: ディレクトリ構造を確認
-      - name: Debug directory structure
-        run: |
-          echo "Current directory: $(pwd)"
-          echo "Listing root directory:"
-          ls -la
-          echo "Listing backend directory:"
-          ls -la backend/
-          echo "Checking if pyproject.toml exists:"
-          ls -la backend/pyproject.toml
-
       # uv dev
       - name: Sync deps (uv)
         working-directory: ./backend
