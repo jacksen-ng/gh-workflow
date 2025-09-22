@@ -27,13 +27,14 @@ jobs:
       # uv のインストール
       - name: Install uv
         run: |
-          cd backend &&
           curl -LsSf https://astral.sh/uv/install.sh | sh
           echo "$HOME/.local/bin" >> $GITHUB_PATH
       
       # uv dev
       - name: Sync deps (uv)
-        run: cd backend && uv sync --dev
+        run: |
+          cd backend
+          uv sync --dev
       
       # ruff check
       - name: Ruff check
