@@ -1,0 +1,28 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Backend for gh-workflow"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]"
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff",
+    "httpx",
+    "types-requests"
+]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+exclude = ["venv", ".venv", "dist", "build"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
