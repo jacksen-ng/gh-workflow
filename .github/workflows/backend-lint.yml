@@ -43,8 +43,8 @@ jobs:
 
       # uv dev
       - name: Sync deps (uv)
+        working-directory: ./backend
         run: |
-          cd backend
           echo "Current directory: $(pwd)"
           echo "Files in backend directory:"
           ls -la
@@ -52,6 +52,7 @@ jobs:
 
       # ruff check
       - name: Ruff check
+        working-directory: ./backend
         run: |
-          cd backend
+          echo "Current directory: $(pwd)"
           uv run ruff format --check
