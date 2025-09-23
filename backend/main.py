@@ -7,6 +7,7 @@ app = fastapi.FastAPI()
 def read_root():
     return {"message": "Hello, World! and Workflow"}
 
-@app.get("test")
+
+@app.get("/test")
 def test():
     return {"message": "test"}
