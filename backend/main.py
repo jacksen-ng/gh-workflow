@@ -11,3 +11,8 @@ def read_root():
 @app.get("/test_workflow")
 def test_workflow():
     return {"message": "Hello, Workflow!"}
+
+
+@app.get("/test_workflow_2")
+def test_workflow_2():
+    return {"message": "Hello, Workflow 2!"}
