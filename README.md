@@ -3,13 +3,17 @@
 ## 概要
 - こちらのレポジトリは、GitHub Workflowの勉強用サンプルです。Dockerを使ってコードを動かし、GitHub Actionsで自動化する流れをまとめています。
 
+## 対象
+- DockerやGitHubActionsをこれから学びたい初心者
+- 「とりあえず触ってみたい」という人向けのサンプル
+
 ## 使用技術
 - フレームワーク：FastAPI / Uvicorn
 - プログラミング言語：Python 3.13
 - 自動化：GitHub Actions / Docker / MakeFile
 - Lintチェック：Ruff
 
-##　Quick Start
+## Quick Start
 >[!NOTE]
 >MacOSを対象
 
@@ -46,3 +50,7 @@ gh-workflow/
 ├── Makefile                
 └── README.md   
 ```
+
+## 資料説明
+- [GitHub WorkFlowとDocker開発について](https://docs.google.com/presentation/d/1dKcBYzYtlVj2aJtbFXlSOzT1Ur6JWX0fcRJwsaPlGZI/edit?usp=sharing)
+
