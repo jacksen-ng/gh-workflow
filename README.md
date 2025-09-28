@@ -1,4 +1,4 @@
-# gh-workflow
+# GitHub WorkFlowとDocker開発について
 
 ## 概要
 - こちらのレポジトリは、GitHub Workflowの勉強用サンプルです。Dockerを使ってコードを動かし、GitHub Actionsで自動化する流れをまとめています。
